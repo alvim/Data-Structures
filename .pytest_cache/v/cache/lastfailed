@@ -1,3 +1,7 @@
 {
+  "linked-list/test_LinkedList.py::TestLinkedList::()": true,
+  "linked-list/test_LinkedList.py::TestLinkedList::()::test_pushFront": true,
+  "linked-list/test_linked_list.py": true,
+  "linked-list/test_linked_list.py::TestLinkedList::()::test_list_init": true,
   "linked-list/test_linked_list.py::test_answer": true
 }

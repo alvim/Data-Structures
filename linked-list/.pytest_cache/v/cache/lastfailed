@@ -1,1 +1,7 @@
-{}
+{
+  "test_LinkedList.py::TestLinkedList::()": true,
+  "test_LinkedList.py::TestLinkedList::()::test_add_before": true,
+  "test_LinkedList.py::TestLinkedList::()::test_back_methods": true,
+  "test_LinkedList.py::TestLinkedList::()::test_find_and_erase": true,
+  "test_LinkedList.py::TestLinkedList::()::test_front_methods": true
+}
