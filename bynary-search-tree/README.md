@@ -2,6 +2,7 @@
 
 Method | Description
 -------|------------
+getRoot() | return Node
 Search(v) | return Node
 Pred-Succ-essor(v) | return Node
 Show() | return String InorderTraversal
