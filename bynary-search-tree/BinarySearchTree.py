@@ -1,8 +1,8 @@
 class Node:
     def __init__(self, value):
         self.value = value
-        self.left = null
-        self.right = null
+        self.left = None
+        self.right = None
     
     getValue(self):
         return self.value
@@ -25,16 +25,13 @@ class Node:
 
 class BinarySearchTree:
     def __init__(self):
-        self.root = null
+        self.root = None
 
     _getNext(self, node, curr_node):
         if node.getValue() < curr_node.getValue():
             return curr_node.getLeft()
         else:
             return curr_node.getRight()
-
-    getRoot(self):
-        return self.root
 
     search(self, value):
 
@@ -45,16 +42,19 @@ class BinarySearchTree:
     insert(self, value):
         n = Node(value)
         curr_node = self.root
+
+        if curr_node is None:
+            return self.root = n
+
         next_node = self._getNext(n, curr_node)
 
-        while next_node:
+        while next_node is not None:
             curr_node = next_node
             next_node = self._getNext(n, curr_node)
         
-        # aqui next_node já é null
-        # agora, esse next_node deve ser o n
-        # como referenciar ele, sem repetir a
-        # comparação já feita dentro de getNext()?
-        # talvez se eu acessar next_node por referência...
+        if curr_node.getValue() > n.getValue():
+            curr_node.setLeft(n)
+        else:
+            curr_node.setRight(n)
 
     remove(self, value):
